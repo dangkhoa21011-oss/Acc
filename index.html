@@ -1,0 +1,94 @@
+# Acc<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cyber Profile</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 6s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex items-center justify-center p-4 selection:bg-cyan-500 selection:text-slate-900">
+
+    <!-- Card Profile Chính -->
+    <div class="relative w-full max-w-md bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-6 shadow-2xl text-center space-y-6 overflow-hidden group hover:border-cyan-500/30 transition-all duration-500">
+        
+        <!-- Hiệu ứng ánh sáng nền phía sau -->
+        <div class="absolute -top-24 -left-24 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-fuchsia-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Ảnh Đại Diện với Vòng Viền Neon Chạy -->
+        <div class="relative w-28 h-28 mx-auto">
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-fuchsia-500 rounded-full animate-spin-slow"></div>
+            <!-- Thay link ảnh của bạn vào src bên dưới -->
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Lucky" alt="Avatar" class="absolute inset-1 w-[104px] h-[104px] object-cover rounded-full bg-slate-950 p-1">
+        </div>
+
+        <!-- Thông tin cá nhân -->
+        <div class="space-y-2">
+            <h1 class="text-2xl font-black tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 uppercase">
+                Your Nickname
+            </h1>
+            <p class="text-xs text-cyan-400 font-mono tracking-widest uppercase">
+                Gamer // Editor // Tech Enthusiast
+            </p>
+            <p class="text-slate-400 text-sm max-w-sm mx-auto font-medium">
+                "Khám phá giới hạn công nghệ, sáng tạo nội dung video và chinh phục các thử thách."
+            </p>
+        </div>
+
+        <!-- Thanh phân cách ngầu -->
+        <div class="flex items-center justify-center gap-2">
+            <div class="h-[1px] w-12 bg-gradient-to-r from-transparent to-slate-700"></div>
+            <div class="w-1.5 h-1.5 bg-cyan-400 rotate-45 animate-pulse"></div>
+            <div class="h-[1px] w-12 bg-gradient-to-l from-transparent to-slate-700"></div>
+        </div>
+
+        <!-- Các Nút Liên Kết Mạng Xã Hội -->
+        <div class="space-y-3.5">
+            <!-- TikTok -->
+            <a href="https://tiktok.com" target="_blank" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/40 border border-slate-800 hover:border-fuchsia-500/50 hover:bg-fuchsia-500 hover:text-slate-950 rounded-xl font-semibold transition-all duration-300 group/btn">
+                <span class="flex items-center gap-3">
+                    <i class="fab fa-tiktok text-xl text-fuchsia-400 group-hover/btn:text-slate-950 transition-colors"></i> TikTok channel
+                </span>
+                <i class="fas fa-arrow-right text-xs opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/40 border border-slate-800 hover:border-red-500/50 hover:bg-red-500 hover:text-slate-950 rounded-xl font-semibold transition-all duration-300 group/btn">
+                <span class="flex items-center gap-3">
+                    <i class="fab fa-youtube text-xl text-red-500 group-hover/btn:text-slate-950 transition-colors"></i> Kênh YouTube
+                </span>
+                <i class="fas fa-arrow-right text-xs opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all"></i>
+            </a>
+
+            <!-- Discord -->
+            <a href="https://discord.com" target="_blank" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/40 border border-slate-800 hover:border-indigo-500/50 hover:bg-indigo-500 hover:text-slate-950 rounded-xl font-semibold transition-all duration-300 group/btn">
+                <span class="flex items-center gap-3">
+                    <i class="fab fa-discord text-xl text-indigo-400 group-hover/btn:text-slate-950 transition-colors"></i> Discord Server
+                </span>
+                <i class="fas fa-arrow-right text-xs opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all"></i>
+            </a>
+        </div>
+
+        <!-- Footer / Icon nhỏ bên dưới -->
+        <div class="flex justify-center gap-6 pt-2 text-slate-500">
+            <a href="#" class="hover:text-cyan-400 transition-colors text-lg"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-fuchsia-400 transition-colors text-lg"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-white transition-colors text-lg"><i class="fab fa-github"></i></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
